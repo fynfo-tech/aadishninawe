@@ -1,254 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Aadish Ninawe portfolio - Electrical Engineering student, Python developer, data analytics enthusiast, and automation builder." />
-  <title>Aadish Ninawe | Developer Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aadish Ninawe — Portfolio</title>
+  <meta name="description" content="Portfolio of Aadish Ninawe, an Electrical Engineering student working with Python, automation, data analytics, portals and smart technology ideas." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="noise"></div>
-  <div class="cursor-glow" id="cursorGlow"></div>
-  <div class="progress-bar" id="progressBar"></div>
-  <div class="particle-layer" id="particleLayer" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" id="top">
-    <nav class="nav glass">
-      <a class="logo" href="#top" aria-label="Aadish Ninawe Home">
-        <span>A</span>N
-      </a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact" class="nav-cta">Contact</a>
-      </div>
+  <header class="site-header" data-sticky>
+    <a class="brand" href="#top" aria-label="Aadish Ninawe home">
+      <span class="brand-mark">AN</span>
+      <span>Aadish Ninawe</span>
+    </a>
+
+    <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-button>
+      <span></span><span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Primary navigation" data-nav>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero section-pad">
-      <div class="orb orb-one"></div>
-      <div class="orb orb-two"></div>
-      <div class="hero-grid container">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Electrical Engineering • Python • AI Automation</p>
-          <h1>
-            Hi, I’m <span class="gradient-text" id="typedName"></span><span class="typing-cursor">|</span>
-          </h1>
-          <p class="hero-subtitle">
-            A passionate developer from Nagpur building smart, useful and beautiful digital experiences using automation, data analytics and emerging technologies.
-          </p>
-          <div class="hero-actions">
-            <a href="#projects" class="btn primary magnetic">Explore Work</a>
-            <a href="Aadish-Ninawe-Resume.pdf" class="btn secondary magnetic" download>Download CV</a>
-            <a href="https://wa.me/918600436523" target="_blank" rel="noopener" class="btn whatsapp magnetic">WhatsApp</a>
-          </div>
-          <div class="hero-stats glass">
-            <div><strong>2024–2028</strong><span>B.Tech EE</span></div>
-            <div><strong>3+</strong><span>Core Projects</span></div>
-            <div><strong>AI + IoT</strong><span>Interests</span></div>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal delay-1">
-          <div class="profile-card glass tilt-card">
-            <div class="profile-media">
-              <img class="profile-photo" src="profile.jpeg" alt="Aadish Ninawe portrait" onerror="this.style.display='none'; this.parentElement.querySelector('.image-placeholder').style.display='grid';" />
-              <div class="image-placeholder">
-                <span>ADD IMAGE</span>
-                <small>assets/profile.jpg</small>
-              </div>
-            </div>
-            <div class="floating-badge badge-one">Python Developer</div>
-            <div class="floating-badge badge-two">Data Analytics</div>
-          </div>
-        </div>
-      </div>
-      <div class="scroll-hint">
-        <span></span>
-        Scroll to discover
-      </div>
-    </section>
-
-    <section class="marquee-wrap" aria-label="technology interests">
-      <div class="marquee">
-        <span>Automation</span><span>Robotics</span><span>Embedded Systems</span><span>AI-Driven Smart Tech</span><span>Data Analytics</span><span>Python</span>
-        <span>Automation</span><span>Robotics</span><span>Embedded Systems</span><span>AI-Driven Smart Tech</span><span>Data Analytics</span><span>Python</span>
-      </div>
-    </section>
-
-    <section id="about" class="section-pad container split-section">
-      <div class="section-title reveal">
-        <p class="eyebrow">About Me</p>
-        <h2>Blending electrical engineering with creative technology.</h2>
-      </div>
-      <div class="about-card glass reveal delay-1">
-        <p>
-          Aadish Ninawe is pursuing B.Tech in Electrical Engineering at Government College of Engineering Nagpur. He explores data analytics, AI automation, robotics, IoT and intelligent systems while building projects that combine creativity with technical precision.
+  <main id="main">
+    <section class="hero section" id="top">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Nagpur, Maharashtra · Electrical Engineering student</p>
+        <h1>I build useful technical things and keep them simple enough for people to use.</h1>
+        <p class="intro">
+          I’m Aadish, a B.Tech Electrical Engineering student at Government College of Engineering Nagpur. I’m currently working as a Portal Administrator for the Institution’s Innovation Council, and I also build small Python tools around automation, data processing, APIs and dashboards.
         </p>
-        <div class="chips">
-          <span>Problem-Solving</span><span>Team Collaboration</span><span>Project Management</span><span>Time Management</span>
+        <div class="hero-actions">
+          <a class="button primary" href="mailto:aadishninawe365@gmail.com">Email me</a>
+          <a class="button secondary" href="assets/Aadish-Ninawe-Resume.pdf" target="_blank" rel="noreferrer">View resume</a>
         </div>
+      </div>
+
+      <aside class="profile-card reveal" aria-label="Profile summary">
+        <div class="photo-wrap">
+          <img src="assets/aadish-profile.jpeg" alt="Portrait of Aadish Ninawe" />
+        </div>
+        <div class="note-card">
+          <p class="note-title">Currently focused on</p>
+          <p>Python automation, data analytics, embedded systems and smart technology ideas.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="quick-info reveal" aria-label="Quick information">
+      <div>
+        <span>Studying</span>
+        <strong>B.Tech Electrical Engineering</strong>
+      </div>
+      <div>
+        <span>Working with</span>
+        <strong>Python, APIs, dashboards</strong>
+      </div>
+      <div>
+        <span>Based in</span>
+        <strong>Nagpur, India</strong>
       </div>
     </section>
 
-    <section id="experience" class="section-pad container">
-      <div class="section-title center reveal">
-        <p class="eyebrow">Experience</p>
-        <h2>Work that builds leadership and technical depth.</h2>
+    <section class="section two-column" id="work">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>Things I can actually talk about.</h2>
       </div>
+
+      <div class="work-list">
+        <article class="work-item reveal">
+          <div class="work-number">01</div>
+          <div>
+            <h3>IIC Portal Management</h3>
+            <p>
+              Managing portal updates, student registrations and troubleshooting for innovation-related activities at GCOE Nagpur. The work is less glamorous than a demo video, but it taught me how important reliability and clear communication are.
+            </p>
+            <ul class="tags">
+              <li>Portal Admin</li><li>Content Updates</li><li>Troubleshooting</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="work-item reveal">
+          <div class="work-number">02</div>
+          <div>
+            <h3>Python Automation Scripts</h3>
+            <p>
+              During my Python Developer Internship, I worked on automation and data processing tasks, including script optimization and API-based workflows. I like this kind of work because a small script can save someone a lot of repeated effort.
+            </p>
+            <ul class="tags">
+              <li>Python</li><li>Automation</li><li>APIs</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="work-item reveal">
+          <div class="work-number">03</div>
+          <div>
+            <h3>Data Analytics Dashboards</h3>
+            <p>
+              Built dashboard-style views for business analytics practice work. My focus was on making the data easier to read, not just adding more charts.
+            </p>
+            <ul class="tags">
+              <li>Data Analytics</li><li>Visualization</li><li>Reporting</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="experience">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>A short timeline.</h2>
+      </div>
+
       <div class="timeline">
         <article class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content glass">
-            <span class="date">Sep 2025 – Present</span>
-            <h3>Portal Administrator</h3>
-            <p>Institution’s Innovation Council, GCOE Nagpur</p>
-            <ul>
-              <li>Manages the IIC portal for smooth functionality and student/faculty experience.</li>
-              <li>Coordinates innovation-related activities, content updates and technical troubleshooting.</li>
-            </ul>
+          <time>Sep 2025 — Present</time>
+          <div>
+            <h3>Portal Administrator · Institution’s Innovation Council</h3>
+            <p>Managing the IIC portal, coordinating innovation activities and supporting students and faculty with technical updates.</p>
           </div>
         </article>
         <article class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content glass">
-            <span class="date">Feb 2025 – Mar 2025</span>
-            <h3>Python Developer Intern</h3>
-            <p>Cognifyz Technologies</p>
-            <ul>
-              <li>Built Python automation and data processing applications.</li>
-              <li>Worked on API integrations, dashboards, performance optimization and maintainable scripts.</li>
-            </ul>
+          <time>Feb 2025 — Mar 2025</time>
+          <div>
+            <h3>Python Developer Intern · Cognifyz Technologies</h3>
+            <p>Worked on Python applications for automation, data processing, API integrations and visualization dashboards.</p>
           </div>
         </article>
         <article class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content glass">
-            <span class="date">Oct 2024 – Aug 2025</span>
-            <h3>IIC Member</h3>
-            <p>GCOE Nagpur</p>
-            <ul>
-              <li>Helped organize innovation workshops, hackathons and technical seminars.</li>
-            </ul>
+          <time>Oct 2024 — Aug 2025</time>
+          <div>
+            <h3>Member · Institution’s Innovation Council</h3>
+            <p>Helped with innovation workshops, hackathons and technical seminars on campus.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <time>Oct 2024 — Feb 2025</time>
+          <div>
+            <h3>Committee Member · Adhyaaya, GCOE Nagpur</h3>
+            <p>Supported college events by coordinating logistics, participants and team communication.</p>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="education-section section-pad container">
-      <div class="section-title reveal">
-        <p class="eyebrow">Education</p>
-        <h2>Academic journey</h2>
+    <section class="section about-section" id="about">
+      <div class="about-copy reveal">
+        <p class="eyebrow">About</p>
+        <h2>I’m still learning, but I like taking responsibility early.</h2>
+        <p>
+          My background is in Electrical Engineering, but I’m equally interested in software that connects with real systems. Robotics, embedded systems, automation and AI-driven smart technologies are areas I want to explore deeply over the next few years.
+        </p>
+        <p>
+          Outside coding and coursework, I’ve been involved in college activities, innovation events and public speaking. I was also a Youth Parliament participant, where I represented the ruling party on the topic “One Nation, One Election.”
+        </p>
       </div>
-      <div class="education-grid">
-        <article class="edu-card glass reveal">
-          <span>01</span>
-          <h3>Government College of Engineering Nagpur</h3>
-          <p>B.Tech in Electrical Engineering • 2024–2028</p>
-        </article>
-        <article class="edu-card glass reveal delay-1">
-          <span>02</span>
-          <h3>Kamla Nehru College, Sakkardhara</h3>
-          <p>Higher Secondary Certificate • 79.67%</p>
-        </article>
-        <article class="edu-card glass reveal delay-2">
-          <span>03</span>
-          <h3>Royal Gondwana School</h3>
-          <p>Secondary School Certificate • 88.4%</p>
-        </article>
-      </div>
-    </section>
 
-    <section id="skills" class="section-pad container">
-      <div class="section-title center reveal">
-        <p class="eyebrow">Skills</p>
-        <h2>Tools and technologies he uses to build.</h2>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-panel glass reveal">
-          <h3>Programming</h3>
-          <div class="skill-list"><span>Python</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      <div class="skill-board reveal">
+        <h3>Skills I use</h3>
+        <div class="skill-group">
+          <p>Programming</p>
+          <span>Python</span>
         </div>
-        <div class="skill-panel glass reveal delay-1">
-          <h3>Technical Skills</h3>
-          <div class="skill-list"><span>Data Analytics</span><span>Data Processing</span><span>API Integration</span><span>Data Visualization</span><span>Automation</span><span>Script Optimization</span></div>
+        <div class="skill-group">
+          <p>Technical</p>
+          <span>Data Processing</span><span>API Integration</span><span>Automation</span><span>Data Visualization</span>
         </div>
-        <div class="skill-panel glass reveal delay-2">
-          <h3>Tools</h3>
-          <div class="skill-list"><span>Power BI</span><span>Photoshop</span><span>Canva</span><span>Embedded Systems</span></div>
+        <div class="skill-group">
+          <p>Tools & interests</p>
+          <span>Photoshop</span><span>Embedded Systems</span><span>Robotics</span><span>Intelligent Systems</span>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section-pad container">
-      <div class="section-title center reveal">
-        <p class="eyebrow">Projects</p>
-        <h2>Featured builds with motion, intelligence and impact.</h2>
-      </div>
-      <div class="project-grid">
-        <article class="project-card glass reveal tilt-card">
-          <div class="project-number">01</div>
-          <h3>CollegeBuddy</h3>
-          <p>Vibe-code project focused on building a useful student companion experience.</p>
-          <div class="project-tags"><span>Web App</span><span>Student Tool</span></div>
-          <div class="project-status">Built as a portfolio showcase project</div>
-        </article>
-        <article class="project-card glass reveal delay-1 tilt-card">
-          <div class="project-number">02</div>
-          <h3>FocusFlow</h3>
-          <p>Productivity-focused vibe-code project designed to support better task flow and attention.</p>
-          <div class="project-tags"><span>Dashboard</span><span>Productivity</span></div>
-          <div class="project-status">Focused on productivity and clean UI flow</div>
-        </article>
-        <article class="project-card glass reveal delay-2 tilt-card">
-          <div class="project-number">03</div>
-          <h3>Solar Powered Smart Agriculture Monitor</h3>
-          <p>IoT project combining agriculture monitoring with solar-powered smart systems.</p>
-          <div class="project-tags"><span>IoT</span><span>Solar</span><span>Embedded</span></div>
-          <div class="project-status">Smart agriculture monitoring concept</div>
-        </article>
-      </div>
-    </section>
-
-    <section id="certifications" class="section-pad container">
-      <div class="section-title reveal">
-        <p class="eyebrow">Certifications</p>
-        <h2>Learning through practical simulations.</h2>
-      </div>
-      <div class="cert-grid">
-        <article class="cert-card glass reveal"><span>Deloitte</span><h3>Cyber Job Simulation</h3><p>Cyber security practical tasks.</p></article>
-        <article class="cert-card glass reveal delay-1"><span>Deloitte</span><h3>Data Analytics Job Simulation</h3><p>Data analysis and forensic technology.</p></article>
-        <article class="cert-card glass reveal delay-2"><span>Tata Group</span><h3>Data Analytics Job Simulation</h3><p>EDA, risk profiling, AI strategy and storytelling.</p></article>
-      </div>
-    </section>
-
-    <section id="contact" class="section-pad container contact-section">
-      <div class="contact-card glass reveal">
-        <p class="eyebrow">Let’s Connect</p>
-        <h2>Ready to build something impactful?</h2>
-        <p>Open to projects, collaborations and learning opportunities in automation, analytics, robotics and intelligent systems.</p>
-        <div class="contact-actions">
-          <a href="mailto:aadishninawe365@gmail.com" class="btn primary magnetic">Email Aadish</a>
-          <a href="https://wa.me/918600436523" target="_blank" rel="noopener" class="btn whatsapp magnetic">WhatsApp</a>
-          <a href="https://linkedin.com/in/aadish-ninawe" target="_blank" rel="noopener" class="btn secondary magnetic">LinkedIn</a>
+    <section class="section contact-section" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Have something practical to build?</h2>
+        <p>
+          I’m open to internships, student projects, event-tech work and small Python automation ideas. Send a message and I’ll reply when I can.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:aadishninawe365@gmail.com">aadishninawe365@gmail.com</a>
+          <a href="https://linkedin.com/in/aadish-ninawe" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Aadish Ninawe. Designed by FYNFO - Puducherry.</p>
+  <footer class="site-footer">
+    <p>© <span data-year></span> Aadish Ninawe. Powered by FYNFO - Puducherry.</p>
   </footer>
 
   <script src="script.js"></script>
